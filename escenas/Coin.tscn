@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://dsl3teoww3sm4"]
+
+[ext_resource type="Script" uid="uid://cp8v23dqajwwq" path="res://scripts/Coin.gd" id="1_yak0v"]
+[ext_resource type="Texture2D" uid="uid://bkjw4cw4ontvl" path="res://assets/Collectable Object/Ancient_Titan_Remains_2D_Platformer_Tileset_Collectable Object - Coin 01.png" id="2_lp42u"]
+[ext_resource type="Texture2D" uid="uid://b643uxcpggqq0" path="res://assets/Collectable Object/Ancient_Titan_Remains_2D_Platformer_Tileset_Collectable Object - Coin 02.png" id="3_rp2wd"]
+[ext_resource type="Texture2D" uid="uid://banucd3ak3i6j" path="res://assets/Collectable Object/Ancient_Titan_Remains_2D_Platformer_Tileset_Collectable Object - Coin 03.png" id="4_gmhvh"]
+[ext_resource type="Texture2D" uid="uid://bg0k6klnl7k8l" path="res://assets/Collectable Object/Ancient_Titan_Remains_2D_Platformer_Tileset_Collectable Object - Coin 04.png" id="5_1ghkp"]
+[ext_resource type="Texture2D" uid="uid://cmvgxcho6q6r1" path="res://assets/Collectable Object/Ancient_Titan_Remains_2D_Platformer_Tileset_Collectable Object - Coin 05.png" id="6_6yd3y"]
+[ext_resource type="Texture2D" uid="uid://b3gjj2hyb4o5f" path="res://assets/Collectable Object/Ancient_Titan_Remains_2D_Platformer_Tileset_Collectable Object - Coin 06.png" id="7_31vda"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cjdqc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_lp42u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rp2wd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gmhvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1ghkp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6yd3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_31vda")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0eft3"]
+radius = 49.497475
+
+[node name="Area2D" type="Area2D" unique_id=1040612505]
+script = ExtResource("1_yak0v")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2123368003]
+sprite_frames = SubResource("SpriteFrames_cjdqc")
+animation = &"Idle"
+frame_progress = 0.5439442
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1055634382]
+shape = SubResource("CircleShape2D_0eft3")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

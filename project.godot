@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="JuegoPlataformas2D"
+run/main_scene="uid://w6cqjjvqyhv3"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
