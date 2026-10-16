@@ -37,7 +37,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_0eft3"]
 radius = 49.497475
 
-[node name="Area2D" type="Area2D" unique_id=1040612505]
+[node name="Area2D" type="Area2D" unique_id=1040612505 groups=["coins"]]
 scale = Vector2(0.3, 0.3)
 script = ExtResource("1_yak0v")
 

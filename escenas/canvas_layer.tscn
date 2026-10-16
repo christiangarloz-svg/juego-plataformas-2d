@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dw23uuaifktds"]
+
+[ext_resource type="Script" uid="uid://by4uthhkvdih5" path="res://scripts/canvas_layer.gd" id="1_5ior0"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1676629043 groups=["ui"]]
+script = ExtResource("1_5ior0")
+
+[node name="Control" type="Control" parent="." unique_id=659345271]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="LabelCoins" type="Label" parent="Control" unique_id=2115289977]
+layout_mode = 1
+offset_left = 39.0
+offset_top = 5.0
+offset_right = 119.0
+offset_bottom = 101.0
+theme_override_font_sizes/font_size = 70
+text = "00"
+
+[node name="LabelTimer" type="Label" parent="Control" unique_id=1917396934]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -126.0
+offset_top = -1.0
+offset_right = -46.0
+offset_bottom = 95.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 70
+text = "00"

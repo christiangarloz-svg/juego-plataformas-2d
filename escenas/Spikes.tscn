@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bfbbvq8t5ieam"]
+
+[ext_resource type="Script" uid="uid://cuxniiplocicq" path="res://scripts/spikes.gd" id="1_70u58"]
+[ext_resource type="Texture2D" uid="uid://bhldvwlnq8vfc" path="res://assets/Platfromer/Ancient_Titan_Remains_2D_Platformer_Tileset_Platformer - Spike.png" id="1_oc1nb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lfxu0"]
+size = Vector2(61, 23)
+
+[node name="Spikes" type="Area2D" unique_id=1102502539]
+script = ExtResource("1_70u58")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1976923073]
+position = Vector2(-1.5, 0.5)
+shape = SubResource("RectangleShape2D_lfxu0")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1239117740]
+position = Vector2(-0.9999943, 0)
+scale = Vector2(0.53125, 0.375)
+texture = ExtResource("1_oc1nb")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
