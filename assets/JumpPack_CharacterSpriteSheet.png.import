@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqrs37wg854ej"
-path="res://.godot/imported/personaje.png-3489bc760abf5776174c3cccc713bd75.ctex"
+uid="uid://bm17j53a7xre1"
+path="res://.godot/imported/JumpPack_CharacterSpriteSheet.png-96a976ca26b0330cb4b6128757c29bb6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://personaje.png"
-dest_files=["res://.godot/imported/personaje.png-3489bc760abf5776174c3cccc713bd75.ctex"]
+source_file="res://assets/JumpPack_CharacterSpriteSheet.png"
+dest_files=["res://.godot/imported/JumpPack_CharacterSpriteSheet.png-96a976ca26b0330cb4b6128757c29bb6.ctex"]
 
 [params]
 

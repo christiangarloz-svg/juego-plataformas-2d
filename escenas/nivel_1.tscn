@@ -34,6 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://de523wuwv7ikt" path="res://assets/Platfromer/Ancient_Titan_Remains_2D_Platformer_Tileset_Platformer - Ground 04.png" id="31_iob30"]
 [ext_resource type="Texture2D" uid="uid://dkok8kyl2rp1" path="res://assets/Platfromer/Ancient_Titan_Remains_2D_Platformer_Tileset_Platformer - Ground 05.png" id="32_w4o3t"]
 [ext_resource type="PackedScene" uid="uid://dsl3teoww3sm4" path="res://escenas/Coin.tscn" id="34_421wj"]
+[ext_resource type="PackedScene" uid="uid://cdkwjrq3gmn4r" path="res://escenas/Player.tscn" id="35_sd2ye"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bxve8"]
 texture = ExtResource("3_421wj")
@@ -4767,3 +4768,6 @@ position = Vector2(747, 268)
 
 [node name="Area2D8" parent="." unique_id=2100216304 instance=ExtResource("34_421wj")]
 position = Vector2(611, 258)
+
+[node name="CharacterBody2D" parent="." unique_id=1439237412 instance=ExtResource("35_sd2ye")]
+position = Vector2(413, 371)
