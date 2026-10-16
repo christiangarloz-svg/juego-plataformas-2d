@@ -44,7 +44,9 @@ script = ExtResource("1_yak0v")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2123368003]
 sprite_frames = SubResource("SpriteFrames_cjdqc")
 animation = &"Idle"
-frame_progress = 0.84379226
+autoplay = "Idle"
+frame = 4
+frame_progress = 0.22793671
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1055634382]
 shape = SubResource("CircleShape2D_0eft3")
